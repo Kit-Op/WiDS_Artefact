@@ -1,0 +1,72 @@
+artifact_path: outputs/mlflow-model
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.8.18
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: pickle
+    sklearn_version: 1.0.2
+metadata:
+  azureml.base_image: mcr.microsoft.com/azureml/curated/azureml-automl:156
+  azureml.engine: automl
+mlflow_version: 2.9.2
+model_size_bytes: 2279412
+model_uuid: 73500870c39c4a90aa8d24b8c5bd577a
+run_id: quirky_tiger_gqzdtdly4r_45
+signature:
+  inputs: '[{"type": "string", "name": "patient_id"}, {"type": "string", "name": "patient_race"},
+    {"type": "string", "name": "payer_type"}, {"type": "string", "name": "patient_state"},
+    {"type": "string", "name": "patient_zip3"}, {"type": "integer", "name": "patient_age"},
+    {"type": "boolean", "name": "patient_gender"}, {"type": "float", "name": "bmi"},
+    {"type": "string", "name": "breast_cancer_diagnosis_code"}, {"type": "string",
+    "name": "breast_cancer_diagnosis_desc"}, {"type": "string", "name": "breast_cancer_diagnosis_year"},
+    {"type": "string", "name": "metastatic_cancer_diagnosis_code"}, {"type": "string",
+    "name": "metastatic_first_treatment"}, {"type": "string", "name": "metastatic_first_treatment_type"},
+    {"type": "string", "name": "metastatic_first_novel_treatment"}, {"type": "string",
+    "name": "metastatic_first_novel_treatment_type"}, {"type": "string", "name": "region"},
+    {"type": "string", "name": "division"}, {"type": "integer", "name": "population"},
+    {"type": "float", "name": "density"}, {"type": "float", "name": "age_median"},
+    {"type": "float", "name": "age_under_10"}, {"type": "float", "name": "age_10_to_19"},
+    {"type": "float", "name": "age_20s"}, {"type": "float", "name": "age_30s"}, {"type":
+    "float", "name": "age_40s"}, {"type": "float", "name": "age_50s"}, {"type": "float",
+    "name": "age_60s"}, {"type": "float", "name": "age_70s"}, {"type": "float", "name":
+    "age_over_80"}, {"type": "float", "name": "male"}, {"type": "float", "name": "female"},
+    {"type": "float", "name": "married"}, {"type": "float", "name": "divorced"}, {"type":
+    "float", "name": "never_married"}, {"type": "float", "name": "widowed"}, {"type":
+    "float", "name": "family_size"}, {"type": "float", "name": "family_dual_income"},
+    {"type": "float", "name": "income_household_median"}, {"type": "float", "name":
+    "income_household_under_5"}, {"type": "float", "name": "income_household_5_to_10"},
+    {"type": "float", "name": "income_household_10_to_15"}, {"type": "float", "name":
+    "income_household_15_to_20"}, {"type": "float", "name": "income_household_20_to_25"},
+    {"type": "float", "name": "income_household_25_to_35"}, {"type": "float", "name":
+    "income_household_35_to_50"}, {"type": "float", "name": "income_household_50_to_75"},
+    {"type": "float", "name": "income_household_75_to_100"}, {"type": "float", "name":
+    "income_household_100_to_150"}, {"type": "float", "name": "income_household_150_over"},
+    {"type": "float", "name": "income_household_six_figure"}, {"type": "float", "name":
+    "income_individual_median"}, {"type": "float", "name": "home_ownership"}, {"type":
+    "float", "name": "housing_units"}, {"type": "float", "name": "home_value"}, {"type":
+    "float", "name": "rent_median"}, {"type": "float", "name": "rent_burden"}, {"type":
+    "float", "name": "education_less_highschool"}, {"type": "float", "name": "education_highschool"},
+    {"type": "float", "name": "education_some_college"}, {"type": "float", "name":
+    "education_bachelors"}, {"type": "float", "name": "education_graduate"}, {"type":
+    "float", "name": "education_college_or_above"}, {"type": "float", "name": "education_stem_degree"},
+    {"type": "float", "name": "labor_force_participation"}, {"type": "float", "name":
+    "unemployment_rate"}, {"type": "float", "name": "self_employed"}, {"type": "float",
+    "name": "farmer"}, {"type": "float", "name": "race_white"}, {"type": "float",
+    "name": "race_black"}, {"type": "float", "name": "race_asian"}, {"type": "float",
+    "name": "race_native"}, {"type": "float", "name": "race_pacific"}, {"type": "float",
+    "name": "race_other"}, {"type": "float", "name": "race_multiple"}, {"type": "float",
+    "name": "hispanic"}, {"type": "float", "name": "disabled"}, {"type": "float",
+    "name": "poverty"}, {"type": "float", "name": "limited_english"}, {"type": "float",
+    "name": "commute_time"}, {"type": "float", "name": "health_uninsured"}, {"type":
+    "float", "name": "veteran"}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int64", "shape": [-1]}}]'
+  params: null
+utc_time_created: '2024-03-02 15:04:25.167875'
